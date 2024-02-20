@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fhir-anonymizer"
+version = "0.1.0"
+description = ""
+license = "MIT"
+authors = ["Diagnostic Robotics <contact@diagnosticrobotics.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jsonpath-ng = "^1.6.1"
+tqdm = "^4.66.2"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+fhir-anonymizer = "fhir_anonymizer:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
